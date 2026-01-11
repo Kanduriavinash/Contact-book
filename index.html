@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Contact Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📒 Simple Contact Book</h1>
+
+    <!-- Add Contact -->
+    <div class="card">
+        <h3>Add New Contact</h3>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="addContact()">Add Contact</button>
+    </div>
+
+    <!-- Search -->
+    <div class="card">
+        <h3>Search Contact</h3>
+        <input type="text" id="search" placeholder="Search by name" onkeyup="searchContacts()">
+    </div>
+
+    <!-- Contact List -->
+    <div class="card">
+        <h3>All Contacts</h3>
+        <ul id="contactList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
